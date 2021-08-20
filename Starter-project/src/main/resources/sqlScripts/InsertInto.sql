@@ -26,7 +26,7 @@ INSERT INTO departman VALUES (NEXTVAL('departman_seq'), 'Departman za urbanizam'
 INSERT INTO departman VALUES (NEXTVAL('departman_seq'), 'Departman za poljoprivrednu tehniku', 'DPT', 4);
 INSERT INTO departman VALUES (NEXTVAL('departman_seq'), 'Departman za veterinarsku medicinu', 'DVM', 4);
 
-INSERT INTO departman VALUES (-100, 'TestDepartman', 'DT', 3);
+INSERT INTO departman VALUES (-100, 'TestDepartman', 'DT', 1);
 
 --STUDENT
 INSERT INTO student(id, ime, prezime, broj_indeksa, status, departman) VALUES (NEXTVAL('student_seq'), 'Ana', 'Kovacevic', 'I15/2019', 1, 1);
@@ -53,4 +53,4 @@ INSERT INTO student(id, ime, prezime, broj_indeksa, status, departman) VALUES (N
 INSERT INTO student(id, ime, prezime, broj_indeksa, status, departman) VALUES (NEXTVAL('student_seq'), 'Goran', 'Pavic', 'V30/2020', 1, 8);
 INSERT INTO student(id, ime, prezime, broj_indeksa, status, departman) VALUES (NEXTVAL('student_seq'), 'Vera', 'Juric', 'V14/2018', 2, 8);
 
-INSERT INTO student(id, ime, prezime, broj_indeksa, status, departman) VALUES (-100, 'Test', 'Student', 'TS1/1', 2, 8);
+INSERT INTO student(id, ime, prezime, broj_indeksa, status, departman) VALUES (-100, 'Test', 'Student', 'TS1/1', 1, 1);

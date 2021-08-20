@@ -89,7 +89,7 @@ public class StudentRestController {
 		}
 		studentRepository.deleteById(id);
 		if(id==-100) {
-			jdbcTemplate.execute("INSERT INTO student VALUES (-100, 'Test', 'Student', 'TS1/1', -100, -100);");
+			jdbcTemplate.execute("INSERT INTO student VALUES (-100, 'TS1/1', 'Test', 'Student', 1, 1);");
 		}
 		return new ResponseEntity<Student>(HttpStatus.OK);
 	}

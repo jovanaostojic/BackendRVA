@@ -71,7 +71,7 @@ public class DepartmanRestController {
 		return new ResponseEntity<Departman>(HttpStatus.OK);
 	}
 	
-	@Transactional
+	//@Transactional
 	@DeleteMapping("departman/{id}")
 	@ApiOperation(value = "Brise departman iz baze podataka cija je ID vrednost prosledjena kao PATH varijabla")
 	public ResponseEntity<Departman> deleteDepartman(@PathVariable("id") Integer id){
@@ -81,7 +81,7 @@ public class DepartmanRestController {
 		jdbcTemplate.execute("DELETE FROM student WHERE departman = " + id);
 		departmanRepository.deleteById(id);
 		if(id==-100) {
-			jdbcTemplate.execute("INSERT INTO departman VALUES (-100, 'TestDepartman', 'DT', 3);");
+			jdbcTemplate.execute("INSERT INTO departman VALUES (-100, 'TestDepartman', 'DT', 1);");
 		}
 		return new ResponseEntity<Departman>(HttpStatus.OK);
 	}
